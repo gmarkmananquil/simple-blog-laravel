@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string("status");
             $table->datetime("published_date");
             $table->datetime("scheduled_date")->nullable();
-            $table->foreignId("author_id")->constrained();
+            $table->foreignId("author_id");
             $table->timestamps();
         });
     }
